@@ -1,1 +1,67 @@
-// TODO
+.main {
+  // margin-top: 64px;
+  max-width: 1120px;
+  padding: 0 2rem;
+  margin: auto;
+
+  ul li {
+    list-style: none;
+  }
+
+  li + li {
+    margin-top: 48px;
+  }
+
+  header {
+    font-family: Inter;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: -0.5px;
+    transition: color 300ms;
+
+    color: var(--heading);
+
+    &:hover {
+      color: var(--highlight);
+      cursor: pointer;
+    }
+  }
+
+  p {
+    margin-top: 8px;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0em;
+  }
+
+  footer {
+    margin-top: 24px;
+    display: flex;
+    gap: 26px;
+
+    svg {
+      margin-right: 8px;
+    }
+  }
+}
+
+// TODO: Trocar essa classe por um seletor css dentro da classe main
+.loadMore {
+  display: block;
+  margin-top: 64px;
+  color: var(--highlight);
+
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: justified;
+  text-decoration: none;
+}

@@ -1,9 +1,11 @@
 import { GetStaticProps } from 'next';
 
-import { getPrismicClient } from '../services/prismic';
+import { FiUser, FiCalendar } from 'react-icons/fi';
+// import { getPrismicClient } from '../services/prismic';
 
-import commonStyles from '../styles/common.module.scss';
+// import commonStyles from '../styles/common.module.scss';
 import styles from './home.module.scss';
+import Header from '../components/Header';
 
 interface Post {
   uid?: string;
@@ -24,9 +26,55 @@ interface HomeProps {
   postsPagination: PostPagination;
 }
 
-// export default function Home() {
-//   // TODO
-// }
+export default function Home(): JSX.Element {
+  return (
+    <>
+      <Header />
+      <main className={styles.main}>
+        <ul>
+          <li>
+            <a>
+              <header>Como utilizar hooks</header>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                dignissimos magni earum rerum distinctio hardadpo awkdo p
+              </p>
+              <footer>
+                <time>
+                  <FiCalendar />
+                  19 de abril
+                </time>
+                <span>
+                  <FiUser />O Grande Deus Lobo
+                </span>
+              </footer>
+            </a>
+          </li>
+          <li>
+            <a>
+              <header>Como utilizar hooks</header>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+                dignissimos magni earum rerum distinctio hardadpo awkdo p
+              </p>
+              <footer>
+                <time>
+                  <FiCalendar /> 19 de abril
+                </time>
+                <span>
+                  <FiUser /> O Grande Deus Lobo
+                </span>
+              </footer>
+            </a>
+          </li>
+        </ul>
+        <a href="/" className={styles.loadMore}>
+          Carregar mais posts
+        </a>
+      </main>
+    </>
+  );
+}
 
 // export const getStaticProps = async () => {
 //   // const prismic = getPrismicClient();
