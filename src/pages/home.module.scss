@@ -48,20 +48,19 @@
       margin-right: 8px;
     }
   }
-}
 
-// TODO: Trocar essa classe por um seletor css dentro da classe main
-.loadMore {
-  display: block;
-  margin-top: 64px;
-  color: var(--highlight);
+  ul ~ a {
+    display: block;
+    margin-top: 64px;
+    color: var(--highlight);
 
-  font-family: Inter;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 22px;
-  letter-spacing: 0em;
-  text-align: justified;
-  text-decoration: none;
+    font-family: Inter;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: justified;
+    text-decoration: none;
+  }
 }

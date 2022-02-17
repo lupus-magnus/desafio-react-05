@@ -68,9 +68,7 @@ export default function Home(): JSX.Element {
             </a>
           </li>
         </ul>
-        <a href="/" className={styles.loadMore}>
-          Carregar mais posts
-        </a>
+        <a href="/">Carregar mais posts</a>
       </main>
     </>
   );
