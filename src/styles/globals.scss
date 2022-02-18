@@ -11,9 +11,16 @@
   --background: #1a1d23;
   --info: #bbbbbb;
   --body: #d7d7d7;
+
+  overflow-x: hidden;
 }
 
 body {
   background: var(--background);
   color: var(--body);
+
+  & a {
+    text-decoration: none;
+    color: inherit;
+  }
 }

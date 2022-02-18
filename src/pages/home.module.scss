@@ -1,7 +1,6 @@
 .main {
-  // margin-top: 64px;
   max-width: 1120px;
-  padding: 0 2rem;
+  padding: 3rem 2rem;
   margin: auto;
 
   ul li {
@@ -49,7 +48,7 @@
     }
   }
 
-  ul ~ a {
+  ul + a {
     display: block;
     margin-top: 64px;
     color: var(--highlight);
