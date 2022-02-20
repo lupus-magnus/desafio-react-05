@@ -48,8 +48,13 @@
     }
   }
 
-  ul + a {
-    display: block;
+  ul + button {
+    display: flex;
+    align-items: center;
+    height: 2.5rem;
+    background-color: transparent;
+    border: none;
+
     margin-top: 64px;
     color: var(--highlight);
 
@@ -61,5 +66,26 @@
     letter-spacing: 0em;
     text-align: justified;
     text-decoration: none;
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    @keyframes spin {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    & > svg {
+      margin: 1rem;
+      animation-name: spin;
+      animation-timing-function: linear;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
   }
 }
